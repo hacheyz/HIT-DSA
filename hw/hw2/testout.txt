@@ -1,0 +1,63 @@
+# TREE TYPE: char normal
+show:             A(B(,E(J,)),C(,G))
+preOrder:         A B E J C G 
+preOrderNonRec:   A B E J C G 
+preOrderSeq:      A B E J C G 
+inOrder:          B J E A C G 
+inOrderNonRec:    B J E A C G 
+inOrderSeq:       B J E A C G 
+postOrder:        J E B G C A 
+postOrderNonRec:  J E B G C A 
+postOrderSeq:     J E B G C A 
+levelOrder:       A B C E G J 
+levelOrderSeq:    A B C E G J 
+isComplete:       0
+width:            2
+
+# TREE TYPE: char large
+show:             A(B(D(H,),E(I(N(,R),O),)),C(F(J,K(P,Q)),G(L,M)))
+preOrder:         A B D H E I N R O C F J K P Q G L M 
+preOrderNonRec:   A B D H E I N R O C F J K P Q G L M 
+preOrderSeq:      A B D H E I N R O C F J K P Q G L M 
+inOrder:          H D B N R I O E A J F P K Q C L G M 
+inOrderNonRec:    H D B N R I O E A J F P K Q C L G M 
+inOrderSeq:       H D B N R I O E A J F P K Q C L G M 
+postOrder:        H D R N O I E B J P Q K F L M G C A 
+postOrderNonRec:  H D R N O I E B J P Q K F L M G C A 
+postOrderSeq:     H D R N O I E B J P Q K F L M G C A 
+levelOrder:       A B C D E F G H I J K L M N O P Q R 
+levelOrderSeq:    A B C D E F G H I J K L M N O P Q R 
+isComplete:       0
+width:            6
+
+# TREE TYPE: int complete
+show:             1(2(4,5),3(6,7))
+preOrder:         1 2 4 5 3 6 7 
+preOrderNonRec:   1 2 4 5 3 6 7 
+preOrderSeq:      1 2 4 5 3 6 7 
+inOrder:          4 2 5 1 6 3 7 
+inOrderNonRec:    4 2 5 1 6 3 7 
+inOrderSeq:       4 2 5 1 6 3 7 
+postOrder:        4 5 2 6 7 3 1 
+postOrderNonRec:  4 5 2 6 7 3 1 
+postOrderSeq:     4 5 2 6 7 3 1 
+levelOrder:       1 2 3 4 5 6 7 
+levelOrderSeq:    1 2 3 4 5 6 7 
+isComplete:       1
+width:            4
+
+# TREE TYPE: int empty
+show:             
+preOrder:         
+preOrderNonRec:   
+preOrderSeq:      
+inOrder:          
+inOrderNonRec:    
+inOrderSeq:       
+postOrder:        
+postOrderNonRec:  
+postOrderSeq:     
+levelOrder:       
+levelOrderSeq:    
+isComplete:       1
+width:            0
